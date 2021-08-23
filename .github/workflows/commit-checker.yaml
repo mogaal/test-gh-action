@@ -40,10 +40,10 @@ jobs:
           pattern: '^.+(\n.{0,72})*$'
           error: 'Body line too long (max 72)'
     
-      - name: Check ending subject line with period
-        if: ${{ success() || failure() }}
-        uses: tim-actions/commit-message-checker-with-regex@v0.3.1
-        with:
-          commits: ${{ steps.get-pr-commits.outputs.commits }}
-          pattern: '[^.]$'
-          error: 'Do not end the subject line with a period'
+#       - name: Check ending subject line with period
+#         if: ${{ success() || failure() }}
+#         uses: tim-actions/commit-message-checker-with-regex@v0.3.1
+#         with:
+#           commits: ${{ steps.get-pr-commits.outputs.commits }}
+#           pattern: '[^.]$'
+#           error: 'Do not end the subject line with a period'
