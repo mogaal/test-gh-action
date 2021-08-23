@@ -30,4 +30,4 @@ jobs:
         with:
           commits: ${{ steps.get-pr-commits.outputs.commits }}
           pattern: '^[A-Z]'
-          error: 'Subject too long (max 75)'
+          error: 'You should Capitalize the subject line'
